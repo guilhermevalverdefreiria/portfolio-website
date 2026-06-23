@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Portfólio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+nav{
+    background:#111827;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#60a5fa;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.projetos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.projeto{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Seu Nome</h1>
+    <p>Desenvolvedor | Analista | Profissional de Tecnologia</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#atividades">Atividades</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre">
+    <h2>Biografia</h2>
+    <div class="card">
+        <p>
+            Escreva aqui sua história profissional,
+            formação, experiências e objetivos.
+        </p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfólio</h2>
+
+    <div class="projetos">
+
+        <div class="projeto">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto.</p>
+            <a href="#" class="botao">Ver Projeto</a>
+        </div>
+
+        <div class="projeto">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto.</p>
+            <a href="#" class="botao">Ver Projeto</a>
+        </div>
+
+        <div class="projeto">
+            <h3>Projeto 3</h3>
+            <p>Descrição do projeto.</p>
+            <a href="#" class="botao">Ver Projeto</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="atividades">
+    <h2>Atividades e Competências</h2>
+
+    <div class="card">
+        <ul>
+            <li>Desenvolvimento Web</li>
+            <li>HTML, CSS e JavaScript</li>
+            <li>Git e GitHub</li>
+            <li>Análise de Dados</li>
+            <li>Automação de Processos</li>
+        </ul>
+    </div>
+</section>
+
+<section id="trabalhos">
+    <h2>Experiência Profissional</h2>
+
+    <div class="card">
+        <h3>Empresa / Cargo</h3>
+        <p>Período</p>
+        <p>Descrição das atividades realizadas.</p>
+    </div>
+
+    <div class="card">
+        <h3>Empresa / Cargo</h3>
+        <p>Período</p>
+        <p>Descrição das atividades realizadas.</p>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+
+    <div class="card">
+        <p>Email: seuemail@email.com</p>
+        <p>LinkedIn: linkedin.com/in/seuperfil</p>
+        <p>GitHub: github.com/seuusuario</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Seu Nome</p>
+</footer>
+
+</body>
+</html>
