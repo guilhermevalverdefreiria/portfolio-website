@@ -3,59 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Portfólio</title>
+<title>Guilherme Valverde Freria | Portfólio</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
+    margin:0;
     font-family:Arial, sans-serif;
     background:#0f172a;
     color:white;
-    line-height:1.6;
 }
 
 header{
     text-align:center;
-    padding:80px 20px;
-    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    padding:70px 20px;
+    background:linear-gradient(135deg,#1d4ed8,#7c3aed);
+}
+
+header img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:4px solid white;
+    object-fit:cover;
 }
 
 header h1{
-    font-size:3rem;
-}
-
-header p{
-    margin-top:10px;
-    font-size:1.2rem;
+    margin-top:15px;
+    font-size:2.5rem;
 }
 
 nav{
     background:#111827;
-    padding:15px;
     text-align:center;
+    padding:15px;
     position:sticky;
     top:0;
 }
 
 nav a{
     color:white;
-    text-decoration:none;
     margin:0 15px;
+    text-decoration:none;
 }
 
 section{
-    max-width:1000px;
+    max-width:900px;
     margin:auto;
-    padding:60px 20px;
+    padding:50px 20px;
 }
 
 h2{
-    margin-bottom:20px;
     color:#60a5fa;
 }
 
@@ -63,35 +60,18 @@ h2{
     background:#1e293b;
     padding:20px;
     border-radius:12px;
-    margin-bottom:20px;
-}
-
-.projetos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.projeto{
-    background:#1e293b;
-    padding:20px;
-    border-radius:12px;
+    margin-top:15px;
 }
 
 footer{
     text-align:center;
-    padding:30px;
+    padding:20px;
     background:#111827;
+    margin-top:40px;
 }
 
-.botao{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 20px;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
+.email{
+    color:#93c5fd;
 }
 </style>
 </head>
@@ -99,15 +79,16 @@ footer{
 <body>
 
 <header>
-    <h1>Seu Nome</h1>
-    <p>Desenvolvedor | Analista | Profissional de Tecnologia</p>
+    <!-- FOTO DO GITHUB -->
+    <img src="https://github.com/guilhermevalverdefreiria.png">
+
+    <h1>Guilherme Valverde Freria</h1>
+    <p>Aluno de Matemática Aplicada e Computacional - UNICAMP</p>
 </header>
 
 <nav>
     <a href="#sobre">Sobre</a>
-    <a href="#portfolio">Portfólio</a>
-    <a href="#atividades">Atividades</a>
-    <a href="#trabalhos">Trabalhos</a>
+    <a href="#formacao">Formação</a>
     <a href="#contato">Contato</a>
 </nav>
 
@@ -115,65 +96,17 @@ footer{
     <h2>Biografia</h2>
     <div class="card">
         <p>
-            Escreva aqui sua história profissional,
-            formação, experiências e objetivos.
+            Sou estudante de Matemática Aplicada e Computacional na UNICAMP,
+            com interesse em programação, ciência de dados, modelagem matemática
+            e desenvolvimento de soluções computacionais.
         </p>
     </div>
 </section>
 
-<section id="portfolio">
-    <h2>Portfólio</h2>
-
-    <div class="projetos">
-
-        <div class="projeto">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto.</p>
-            <a href="#" class="botao">Ver Projeto</a>
-        </div>
-
-        <div class="projeto">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto.</p>
-            <a href="#" class="botao">Ver Projeto</a>
-        </div>
-
-        <div class="projeto">
-            <h3>Projeto 3</h3>
-            <p>Descrição do projeto.</p>
-            <a href="#" class="botao">Ver Projeto</a>
-        </div>
-
-    </div>
-</section>
-
-<section id="atividades">
-    <h2>Atividades e Competências</h2>
-
+<section id="formacao">
+    <h2>Formação</h2>
     <div class="card">
-        <ul>
-            <li>Desenvolvimento Web</li>
-            <li>HTML, CSS e JavaScript</li>
-            <li>Git e GitHub</li>
-            <li>Análise de Dados</li>
-            <li>Automação de Processos</li>
-        </ul>
-    </div>
-</section>
-
-<section id="trabalhos">
-    <h2>Experiência Profissional</h2>
-
-    <div class="card">
-        <h3>Empresa / Cargo</h3>
-        <p>Período</p>
-        <p>Descrição das atividades realizadas.</p>
-    </div>
-
-    <div class="card">
-        <h3>Empresa / Cargo</h3>
-        <p>Período</p>
-        <p>Descrição das atividades realizadas.</p>
+        <p><b>UNICAMP</b> - Matemática Aplicada e Computacional</p>
     </div>
 </section>
 
@@ -181,14 +114,14 @@ footer{
     <h2>Contato</h2>
 
     <div class="card">
-        <p>Email: seuemail@email.com</p>
-        <p>LinkedIn: linkedin.com/in/seuperfil</p>
-        <p>GitHub: github.com/seuusuario</p>
+        <p>Email pessoal: <span class="email">guilhermevalverdefreiria@gmail.com.br</span></p>
+        <p>Email UNICAMP: <span class="email">g270535@dac.unicamp.br</span></p>
+        <p>GitHub: github.com/guilhermevalverdefreiria</p>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 - Seu Nome</p>
+    <p>© 2026 - Guilherme Valverde Freria</p>
 </footer>
 
 </body>
